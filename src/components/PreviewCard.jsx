@@ -12,7 +12,7 @@ const PreviewCard = () => {
   //console.log(githubAPI.isLoading)
 
   return (
-    <div className={`h-[450px] relative flex flex-col gap-3 p-4 ${modeContext.darkMode ? 'bg-transparent text-white' : 'text-gray-500 bg-white'}`}>
+    <div className={`relative flex flex-col gap-3 p-4 ${modeContext.darkMode ? 'bg-transparent text-white' : 'text-gray-500 bg-white'}`}>
         {
             isLoading ? <Loading /> : <CardData />
         } 
