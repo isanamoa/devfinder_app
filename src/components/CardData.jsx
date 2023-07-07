@@ -15,7 +15,7 @@ const CardData = () => {
                 {
                     githubAPI.userData.avatar_url != null 
                     ?     
-                        <img src={githubAPI.userData.avatar_url} alt="Avatar" className="h-24 w-24 rounded-full" /> 
+                        <img src={githubAPI.userData.avatar_url} alt="Avatar" className="h-24 w-24 rounded-full" loading="lazy" /> 
                     :
                         <div className="flex justify-center items-center bg-black rounded-full">
                             <div className='px-6 py-2 bg-gradient-to-r from-slate-800 via-rose-800 inline-block text-transparent bg-clip-text to-indigo-400 text-5xl font-bold' >
